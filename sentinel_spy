@@ -1099,10 +1099,10 @@ clearBtn.MouseButton1Down:Connect(function()
   selected = nil
 end)
 copyBtn.MouseButton1Down:Connect(function()
-    SetClipboard(codebox.Text)
+    syn_clipboard_set(codebox.Text)
 end)
 copyRemBtn.MouseButton1Down:Connect(function()
-  SetClipboard(typeToString(selected.Source))
+  syn_clipboard_set(typeToString(selected.Source))
 end)
 miniBtn.MouseButton1Down:Connect(function()
   if vis == false then
@@ -1145,4 +1145,3 @@ for _, child in pairs(SentinelSpy:GetDescendants()) do
     end)
   end
 end
-print('a')
