@@ -1099,10 +1099,10 @@ clearBtn.MouseButton1Down:Connect(function()
   selected = nil
 end)
 copyBtn.MouseButton1Down:Connect(function()
-    syn_clipboard_set(codebox.Text)
+    setclipboard(codebox.Text)
 end)
 copyRemBtn.MouseButton1Down:Connect(function()
-  syn_clipboard_set(typeToString(selected.Source))
+  setclipboard(typeToString(selected.Source))
 end)
 miniBtn.MouseButton1Down:Connect(function()
   if vis == false then
