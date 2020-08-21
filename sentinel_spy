@@ -1,5 +1,6 @@
 if game.CoreGui:FindFirstChild("SentinelSpy") then
     game.CoreGui.SentinelSpy.mainFrame.Size = UDim2.new(0, 565, 0, 348)
+    game.CoreGui.SentinelSpy.mainFrame.Visible = true;
 else
     local SentinelSpy = Instance.new("ScreenGui")
     local mainFrame = Instance.new("ImageLabel")
