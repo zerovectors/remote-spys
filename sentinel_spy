@@ -1,6 +1,6 @@
 if game.CoreGui:FindFirstChild("SentinelSpy") then
     game.CoreGui.SentinelSpy.mainFrame.Visible = true;
-    game.CoreGui.SentinelSpy.mainFrame:TweenSize(UDim2.new(0, 1,0, 31), "Out", "Linear", .2, true)
+    game.CoreGui.SentinelSpy.mainFrame:TweenSize(UDim2.new(0, 565,0, 31), "Out", "Linear", .2, true)
     wait(.2)
     game.CoreGui.SentinelSpy.mainFrame:TweenSize(UDim2.new(0, 565, 0, 348), "Out", "Linear", .2, true)
 else
