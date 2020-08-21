@@ -1,1147 +1,1151 @@
-local SentinelSpy = Instance.new("ScreenGui")
-local mainFrame = Instance.new("ImageLabel")
-local properties = Instance.new("ImageLabel")
-local codeframe = Instance.new("ScrollingFrame")
-local codebox = Instance.new("TextLabel")
-local remotes = Instance.new("ImageLabel")
-local remotesScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayout = Instance.new("UIListLayout")
-local eTemplate = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-local name = Instance.new("TextLabel")
-local fTemplate = Instance.new("TextButton")
-local name_2 = Instance.new("TextLabel")
-local icon = Instance.new("ImageLabel")
-local copyBtn = Instance.new("ImageButton")
-local copyLabel = Instance.new("TextLabel")
-local clearBtn = Instance.new("ImageButton")
-local clearLabel = Instance.new("TextLabel")
-local enablespy = Instance.new("ImageButton")
-local text = Instance.new("TextLabel")
-local copyRemBtn = Instance.new("ImageButton")
-local copyRemLabel = Instance.new("TextLabel")
-local muteremoteBtn = Instance.new("ImageButton")
-local text_2 = Instance.new("TextLabel")
-local unmuteremoteBtn = Instance.new("ImageButton")
-local text_3 = Instance.new("TextLabel")
-local topbarFrame = Instance.new("ImageLabel")
-local exitBtn = Instance.new("ImageButton")
-local exitLabel = Instance.new("TextLabel")
-local miniBtn = Instance.new("ImageButton")
-local miniLabel = Instance.new("TextLabel")
-local sentinelLogo = Instance.new("ImageLabel")
+if game.CoreGui:FindFirstChild("SentinelSpy") then
+    game.CoreGui.SentinelSpy.mainFrame.Size = UDim2.new(0, 565, 0, 348)
+else
+    local SentinelSpy = Instance.new("ScreenGui")
+    local mainFrame = Instance.new("ImageLabel")
+    local properties = Instance.new("ImageLabel")
+    local codeframe = Instance.new("ScrollingFrame")
+    local codebox = Instance.new("TextLabel")
+    local remotes = Instance.new("ImageLabel")
+    local remotesScrollingFrame = Instance.new("ScrollingFrame")
+    local UIListLayout = Instance.new("UIListLayout")
+    local eTemplate = Instance.new("TextButton")
+    local ImageLabel = Instance.new("ImageLabel")
+    local name = Instance.new("TextLabel")
+    local fTemplate = Instance.new("TextButton")
+    local name_2 = Instance.new("TextLabel")
+    local icon = Instance.new("ImageLabel")
+    local copyBtn = Instance.new("ImageButton")
+    local copyLabel = Instance.new("TextLabel")
+    local clearBtn = Instance.new("ImageButton")
+    local clearLabel = Instance.new("TextLabel")
+    local enablespy = Instance.new("ImageButton")
+    local text = Instance.new("TextLabel")
+    local copyRemBtn = Instance.new("ImageButton")
+    local copyRemLabel = Instance.new("TextLabel")
+    local muteremoteBtn = Instance.new("ImageButton")
+    local text_2 = Instance.new("TextLabel")
+    local unmuteremoteBtn = Instance.new("ImageButton")
+    local text_3 = Instance.new("TextLabel")
+    local topbarFrame = Instance.new("ImageLabel")
+    local exitBtn = Instance.new("ImageButton")
+    local exitLabel = Instance.new("TextLabel")
+    local miniBtn = Instance.new("ImageButton")
+    local miniLabel = Instance.new("TextLabel")
+    local sentinelLogo = Instance.new("ImageLabel")
 
-SentinelSpy.Name = "SentinelSpy"
-SentinelSpy.Parent = game.CoreGui
-SentinelSpy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    SentinelSpy.Name = "SentinelSpy"
+    SentinelSpy.Parent = game.CoreGui
+    SentinelSpy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-mainFrame.Name = "mainFrame"
-mainFrame.Parent = SentinelSpy
-mainFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-mainFrame.BackgroundTransparency = 1.000
-mainFrame.BorderSizePixel = 0
-mainFrame.ClipsDescendants = true
-mainFrame.Position = UDim2.new(0,0,0,0)
-mainFrame.Size = UDim2.new(0, 565, 0, 348)
-mainFrame.Image = "http://www.roblox.com/asset/?id=4530318781"
-mainFrame.ImageColor3 = Color3.fromRGB(32, 32, 32)
-mainFrame.ScaleType = Enum.ScaleType.Slice
-mainFrame.SliceCenter = Rect.new(20, 20, 480, 480)
+    mainFrame.Name = "mainFrame"
+    mainFrame.Parent = SentinelSpy
+    mainFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+    mainFrame.BackgroundTransparency = 1.000
+    mainFrame.BorderSizePixel = 0
+    mainFrame.ClipsDescendants = true
+    mainFrame.Position = UDim2.new(0,0,0,0)
+    mainFrame.Size = UDim2.new(0, 565, 0, 348)
+    mainFrame.Image = "http://www.roblox.com/asset/?id=4530318781"
+    mainFrame.ImageColor3 = Color3.fromRGB(32, 32, 32)
+    mainFrame.ScaleType = Enum.ScaleType.Slice
+    mainFrame.SliceCenter = Rect.new(20, 20, 480, 480)
 
-properties.Name = "properties"
-properties.Parent = mainFrame
-properties.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-properties.BackgroundTransparency = 1.000
-properties.BorderColor3 = Color3.fromRGB(27, 42, 53)
-properties.BorderSizePixel = 0
-properties.Position = UDim2.new(0, 153, 0, 38)
-properties.Size = UDim2.new(0, 428, 0, 277)
-properties.Image = "http://www.roblox.com/asset/?id=4530318781"
-properties.ImageColor3 = Color3.fromRGB(24, 24, 24)
-properties.ScaleType = Enum.ScaleType.Slice
-properties.SliceCenter = Rect.new(20, 20, 480, 480)
+    properties.Name = "properties"
+    properties.Parent = mainFrame
+    properties.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+    properties.BackgroundTransparency = 1.000
+    properties.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    properties.BorderSizePixel = 0
+    properties.Position = UDim2.new(0, 153, 0, 38)
+    properties.Size = UDim2.new(0, 428, 0, 277)
+    properties.Image = "http://www.roblox.com/asset/?id=4530318781"
+    properties.ImageColor3 = Color3.fromRGB(24, 24, 24)
+    properties.ScaleType = Enum.ScaleType.Slice
+    properties.SliceCenter = Rect.new(20, 20, 480, 480)
 
-codeframe.Name = "codeframe"
-codeframe.Parent = properties
-codeframe.AnchorPoint = Vector2.new(0.5, 0.5)
-codeframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-codeframe.BackgroundTransparency = 1.000
-codeframe.BorderSizePixel = 0
-codeframe.Position = UDim2.new(0.5, 0, 0.5, 0)
-codeframe.Size = UDim2.new(0, 380, 0, 260)
-codeframe.BottomImage = "http://www.roblox.com/asset/?id=2991280711"
-codeframe.CanvasSize = UDim2.new(0, 0, 30, 0)
-codeframe.MidImage = "http://www.roblox.com/asset/?id=2991280711"
-codeframe.ScrollBarThickness = 5
-codeframe.TopImage = "http://www.roblox.com/asset/?id=2991280711"
+    codeframe.Name = "codeframe"
+    codeframe.Parent = properties
+    codeframe.AnchorPoint = Vector2.new(0.5, 0.5)
+    codeframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    codeframe.BackgroundTransparency = 1.000
+    codeframe.BorderSizePixel = 0
+    codeframe.Position = UDim2.new(0.5, 0, 0.5, 0)
+    codeframe.Size = UDim2.new(0, 380, 0, 260)
+    codeframe.BottomImage = "http://www.roblox.com/asset/?id=2991280711"
+    codeframe.CanvasSize = UDim2.new(0, 0, 30, 0)
+    codeframe.MidImage = "http://www.roblox.com/asset/?id=2991280711"
+    codeframe.ScrollBarThickness = 5
+    codeframe.TopImage = "http://www.roblox.com/asset/?id=2991280711"
 
-codebox.Name = "codebox"
-codebox.Parent = codeframe
-codebox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-codebox.BackgroundTransparency = 1.000
-codebox.BorderSizePixel = 0
-codebox.Size = UDim2.new(0, 380, 0, 260)
-codebox.Font = Enum.Font.Code
-codebox.Text = ""
-codebox.TextColor3 = Color3.fromRGB(255, 255, 255)
-codebox.TextSize = 16.000
-codebox.TextXAlignment = Enum.TextXAlignment.Left
-codebox.TextYAlignment = Enum.TextYAlignment.Top
+    codebox.Name = "codebox"
+    codebox.Parent = codeframe
+    codebox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    codebox.BackgroundTransparency = 1.000
+    codebox.BorderSizePixel = 0
+    codebox.Size = UDim2.new(0, 380, 0, 260)
+    codebox.Font = Enum.Font.Code
+    codebox.Text = ""
+    codebox.TextColor3 = Color3.fromRGB(255, 255, 255)
+    codebox.TextSize = 16.000
+    codebox.TextXAlignment = Enum.TextXAlignment.Left
+    codebox.TextYAlignment = Enum.TextYAlignment.Top
 
-remotes.Name = "remotes"
-remotes.Parent = mainFrame
-remotes.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-remotes.BackgroundTransparency = 1.000
-remotes.BorderColor3 = Color3.fromRGB(27, 42, 53)
-remotes.BorderSizePixel = 0
-remotes.Position = UDim2.new(0, 10, 0, 38)
-remotes.Size = UDim2.new(0, 134, 0, 277)
-remotes.Image = "http://www.roblox.com/asset/?id=4530318781"
-remotes.ImageColor3 = Color3.fromRGB(24, 24, 24)
-remotes.ScaleType = Enum.ScaleType.Slice
-remotes.SliceCenter = Rect.new(20, 20, 480, 480)
+    remotes.Name = "remotes"
+    remotes.Parent = mainFrame
+    remotes.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+    remotes.BackgroundTransparency = 1.000
+    remotes.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    remotes.BorderSizePixel = 0
+    remotes.Position = UDim2.new(0, 10, 0, 38)
+    remotes.Size = UDim2.new(0, 134, 0, 277)
+    remotes.Image = "http://www.roblox.com/asset/?id=4530318781"
+    remotes.ImageColor3 = Color3.fromRGB(24, 24, 24)
+    remotes.ScaleType = Enum.ScaleType.Slice
+    remotes.SliceCenter = Rect.new(20, 20, 480, 480)
 
-remotesScrollingFrame.Name = "remotesScrollingFrame"
-remotesScrollingFrame.Parent = remotes
-remotesScrollingFrame.AnchorPoint = Vector2.new(0.5, 0)
-remotesScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-remotesScrollingFrame.BackgroundTransparency = 1.000
-remotesScrollingFrame.BorderSizePixel = 0
-remotesScrollingFrame.Position = UDim2.new(0.5, 0, 0, 5)
-remotesScrollingFrame.Size = UDim2.new(0, 125, 0, 265)
-remotesScrollingFrame.BottomImage = "http://www.roblox.com/asset/?id=2991280711"
-remotesScrollingFrame.CanvasSize = UDim2.new(0, 0, 30, 0)
-remotesScrollingFrame.MidImage = "http://www.roblox.com/asset/?id=2991280711"
-remotesScrollingFrame.ScrollBarThickness = 5
-remotesScrollingFrame.TopImage = "http://www.roblox.com/asset/?id=2991280711"
+    remotesScrollingFrame.Name = "remotesScrollingFrame"
+    remotesScrollingFrame.Parent = remotes
+    remotesScrollingFrame.AnchorPoint = Vector2.new(0.5, 0)
+    remotesScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    remotesScrollingFrame.BackgroundTransparency = 1.000
+    remotesScrollingFrame.BorderSizePixel = 0
+    remotesScrollingFrame.Position = UDim2.new(0.5, 0, 0, 5)
+    remotesScrollingFrame.Size = UDim2.new(0, 125, 0, 265)
+    remotesScrollingFrame.BottomImage = "http://www.roblox.com/asset/?id=2991280711"
+    remotesScrollingFrame.CanvasSize = UDim2.new(0, 0, 30, 0)
+    remotesScrollingFrame.MidImage = "http://www.roblox.com/asset/?id=2991280711"
+    remotesScrollingFrame.ScrollBarThickness = 5
+    remotesScrollingFrame.TopImage = "http://www.roblox.com/asset/?id=2991280711"
 
-UIListLayout.Parent = remotesScrollingFrame
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 7)
+    UIListLayout.Parent = remotesScrollingFrame
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 7)
 
-eTemplate.Name = "eTemplate"
-eTemplate.Parent = remotesScrollingFrame
-eTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-eTemplate.BackgroundTransparency = 1.000
-eTemplate.Size = UDim2.new(0, 129, 0, 19)
-eTemplate.Font = Enum.Font.SourceSans
-eTemplate.Text = ""
-eTemplate.TextColor3 = Color3.fromRGB(181, 181, 181)
-eTemplate.TextSize = 14.000
+    eTemplate.Name = "eTemplate"
+    eTemplate.Parent = remotesScrollingFrame
+    eTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    eTemplate.BackgroundTransparency = 1.000
+    eTemplate.Size = UDim2.new(0, 129, 0, 19)
+    eTemplate.Font = Enum.Font.SourceSans
+    eTemplate.Text = ""
+    eTemplate.TextColor3 = Color3.fromRGB(181, 181, 181)
+    eTemplate.TextSize = 14.000
 
-ImageLabel.Parent = eTemplate
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Size = UDim2.new(0, 19, 0, 19)
-ImageLabel.Image = "rbxassetid://4640035463"
+    ImageLabel.Parent = eTemplate
+    ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ImageLabel.BackgroundTransparency = 1.000
+    ImageLabel.Size = UDim2.new(0, 19, 0, 19)
+    ImageLabel.Image = "rbxassetid://4640035463"
 
-name.Name = "name"
-name.Parent = eTemplate
-name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-name.BackgroundTransparency = 1.000
-name.Position = UDim2.new(0.147286817, 0, 0, 0)
-name.Size = UDim2.new(0, 104, 0, 19)
-name.Font = Enum.Font.SourceSans
-name.TextColor3 = Color3.fromRGB(181, 181, 181)
-name.TextSize = 14.000
+    name.Name = "name"
+    name.Parent = eTemplate
+    name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    name.BackgroundTransparency = 1.000
+    name.Position = UDim2.new(0.147286817, 0, 0, 0)
+    name.Size = UDim2.new(0, 104, 0, 19)
+    name.Font = Enum.Font.SourceSans
+    name.TextColor3 = Color3.fromRGB(181, 181, 181)
+    name.TextSize = 14.000
 
-fTemplate.Name = "fTemplate"
-fTemplate.Parent = remotesScrollingFrame
-fTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-fTemplate.BackgroundTransparency = 1.000
-fTemplate.Size = UDim2.new(0, 129, 0, 19)
-fTemplate.Font = Enum.Font.SourceSans
-fTemplate.Text = ""
-fTemplate.TextColor3 = Color3.fromRGB(181, 181, 181)
-fTemplate.TextSize = 14.000
+    fTemplate.Name = "fTemplate"
+    fTemplate.Parent = remotesScrollingFrame
+    fTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    fTemplate.BackgroundTransparency = 1.000
+    fTemplate.Size = UDim2.new(0, 129, 0, 19)
+    fTemplate.Font = Enum.Font.SourceSans
+    fTemplate.Text = ""
+    fTemplate.TextColor3 = Color3.fromRGB(181, 181, 181)
+    fTemplate.TextSize = 14.000
 
-name_2.Name = "name"
-name_2.Parent = fTemplate
-name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-name_2.BackgroundTransparency = 1.000
-name_2.Position = UDim2.new(0.147286817, 0, 0, 0)
-name_2.Size = UDim2.new(0, 104, 0, 19)
-name_2.Font = Enum.Font.SourceSans
-name_2.TextColor3 = Color3.fromRGB(181, 181, 181)
-name_2.TextSize = 14.000
+    name_2.Name = "name"
+    name_2.Parent = fTemplate
+    name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    name_2.BackgroundTransparency = 1.000
+    name_2.Position = UDim2.new(0.147286817, 0, 0, 0)
+    name_2.Size = UDim2.new(0, 104, 0, 19)
+    name_2.Font = Enum.Font.SourceSans
+    name_2.TextColor3 = Color3.fromRGB(181, 181, 181)
+    name_2.TextSize = 14.000
 
-icon.Name = "icon"
-icon.Parent = fTemplate
-icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-icon.BackgroundTransparency = 1.000
-icon.BorderSizePixel = 0
-icon.Position = UDim2.new(0, 2, 0, 0)
-icon.Size = UDim2.new(0, 17, 0, 19)
-icon.Image = "http://www.roblox.com/asset/?id=4640035282"
-icon.ScaleType = Enum.ScaleType.Fit
+    icon.Name = "icon"
+    icon.Parent = fTemplate
+    icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    icon.BackgroundTransparency = 1.000
+    icon.BorderSizePixel = 0
+    icon.Position = UDim2.new(0, 2, 0, 0)
+    icon.Size = UDim2.new(0, 17, 0, 19)
+    icon.Image = "http://www.roblox.com/asset/?id=4640035282"
+    icon.ScaleType = Enum.ScaleType.Fit
 
-copyBtn.Name = "copyBtn"
-copyBtn.Parent = mainFrame
-copyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-copyBtn.BackgroundTransparency = 1.000
-copyBtn.BorderSizePixel = 0
-copyBtn.Position = UDim2.new(0, 140, 0, 323)
-copyBtn.Size = UDim2.new(0, 67, 0, 19)
-copyBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
-copyBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-copyBtn.ImageTransparency = 1.000
-copyBtn.ScaleType = Enum.ScaleType.Slice
-copyBtn.SliceCenter = Rect.new(20, 20, 480, 480)
+    copyBtn.Name = "copyBtn"
+    copyBtn.Parent = mainFrame
+    copyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    copyBtn.BackgroundTransparency = 1.000
+    copyBtn.BorderSizePixel = 0
+    copyBtn.Position = UDim2.new(0, 140, 0, 323)
+    copyBtn.Size = UDim2.new(0, 67, 0, 19)
+    copyBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
+    copyBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    copyBtn.ImageTransparency = 1.000
+    copyBtn.ScaleType = Enum.ScaleType.Slice
+    copyBtn.SliceCenter = Rect.new(20, 20, 480, 480)
 
-copyLabel.Name = "copyLabel"
-copyLabel.Parent = copyBtn
-copyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-copyLabel.BackgroundTransparency = 1.000
-copyLabel.BorderSizePixel = 0
-copyLabel.Size = UDim2.new(0.974466681, 0, 1, 0)
-copyLabel.Font = Enum.Font.SourceSans
-copyLabel.Text = "Copy"
-copyLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
-copyLabel.TextSize = 14.000
+    copyLabel.Name = "copyLabel"
+    copyLabel.Parent = copyBtn
+    copyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    copyLabel.BackgroundTransparency = 1.000
+    copyLabel.BorderSizePixel = 0
+    copyLabel.Size = UDim2.new(0.974466681, 0, 1, 0)
+    copyLabel.Font = Enum.Font.SourceSans
+    copyLabel.Text = "Copy"
+    copyLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
+    copyLabel.TextSize = 14.000
 
-clearBtn.Name = "clearBtn"
-clearBtn.Parent = mainFrame
-clearBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-clearBtn.BackgroundTransparency = 1.000
-clearBtn.BorderSizePixel = 0
-clearBtn.Position = UDim2.new(0, 10, 0, 323)
-clearBtn.Size = UDim2.new(0, 134, 0, 19)
-clearBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
-clearBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-clearBtn.ImageTransparency = 1.000
-clearBtn.ScaleType = Enum.ScaleType.Slice
-clearBtn.SliceCenter = Rect.new(20, 20, 480, 480)
+    clearBtn.Name = "clearBtn"
+    clearBtn.Parent = mainFrame
+    clearBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    clearBtn.BackgroundTransparency = 1.000
+    clearBtn.BorderSizePixel = 0
+    clearBtn.Position = UDim2.new(0, 10, 0, 323)
+    clearBtn.Size = UDim2.new(0, 134, 0, 19)
+    clearBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
+    clearBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    clearBtn.ImageTransparency = 1.000
+    clearBtn.ScaleType = Enum.ScaleType.Slice
+    clearBtn.SliceCenter = Rect.new(20, 20, 480, 480)
 
-clearLabel.Name = "clearLabel"
-clearLabel.Parent = clearBtn
-clearLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-clearLabel.BackgroundTransparency = 1.000
-clearLabel.BorderSizePixel = 0
-clearLabel.Size = UDim2.new(1, 0, 1, 0)
-clearLabel.Font = Enum.Font.SourceSans
-clearLabel.Text = "Clear Logs"
-clearLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
-clearLabel.TextSize = 14.000
+    clearLabel.Name = "clearLabel"
+    clearLabel.Parent = clearBtn
+    clearLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    clearLabel.BackgroundTransparency = 1.000
+    clearLabel.BorderSizePixel = 0
+    clearLabel.Size = UDim2.new(1, 0, 1, 0)
+    clearLabel.Font = Enum.Font.SourceSans
+    clearLabel.Text = "Clear Logs"
+    clearLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
+    clearLabel.TextSize = 14.000
 
-enablespy.Name = "enablespy"
-enablespy.Parent = mainFrame
-enablespy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-enablespy.BackgroundTransparency = 1.000
-enablespy.BorderSizePixel = 0
-enablespy.Position = UDim2.new(0, 325, 0, 323)
-enablespy.Size = UDim2.new(0, 84, 0, 19)
-enablespy.Image = "http://www.roblox.com/asset/?id=4530318781"
-enablespy.ImageColor3 = Color3.fromRGB(140, 30, 49)
-enablespy.ImageTransparency = 1.000
-enablespy.ScaleType = Enum.ScaleType.Slice
-enablespy.SliceCenter = Rect.new(20, 20, 480, 480)
+    enablespy.Name = "enablespy"
+    enablespy.Parent = mainFrame
+    enablespy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    enablespy.BackgroundTransparency = 1.000
+    enablespy.BorderSizePixel = 0
+    enablespy.Position = UDim2.new(0, 325, 0, 323)
+    enablespy.Size = UDim2.new(0, 84, 0, 19)
+    enablespy.Image = "http://www.roblox.com/asset/?id=4530318781"
+    enablespy.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    enablespy.ImageTransparency = 1.000
+    enablespy.ScaleType = Enum.ScaleType.Slice
+    enablespy.SliceCenter = Rect.new(20, 20, 480, 480)
 
-text.Name = "text"
-text.Parent = enablespy
-text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-text.BackgroundTransparency = 1.000
-text.BorderSizePixel = 0
-text.Size = UDim2.new(0.988235295, 0, 1, 0)
-text.Font = Enum.Font.SourceSans
-text.Text = "Enable Spy"
-text.TextColor3 = Color3.fromRGB(181, 181, 181)
-text.TextSize = 14.000
+    text.Name = "text"
+    text.Parent = enablespy
+    text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    text.BackgroundTransparency = 1.000
+    text.BorderSizePixel = 0
+    text.Size = UDim2.new(0.988235295, 0, 1, 0)
+    text.Font = Enum.Font.SourceSans
+    text.Text = "Enable Spy"
+    text.TextColor3 = Color3.fromRGB(181, 181, 181)
+    text.TextSize = 14.000
 
-copyRemBtn.Name = "copyRemBtn"
-copyRemBtn.Parent = mainFrame
-copyRemBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-copyRemBtn.BackgroundTransparency = 1.000
-copyRemBtn.BorderSizePixel = 0
-copyRemBtn.Position = UDim2.new(0, 214, 0, 323)
-copyRemBtn.Size = UDim2.new(0, 99, 0, 19)
-copyRemBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
-copyRemBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-copyRemBtn.ImageTransparency = 1.000
-copyRemBtn.ScaleType = Enum.ScaleType.Slice
-copyRemBtn.SliceCenter = Rect.new(20, 20, 480, 480)
+    copyRemBtn.Name = "copyRemBtn"
+    copyRemBtn.Parent = mainFrame
+    copyRemBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    copyRemBtn.BackgroundTransparency = 1.000
+    copyRemBtn.BorderSizePixel = 0
+    copyRemBtn.Position = UDim2.new(0, 214, 0, 323)
+    copyRemBtn.Size = UDim2.new(0, 99, 0, 19)
+    copyRemBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
+    copyRemBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    copyRemBtn.ImageTransparency = 1.000
+    copyRemBtn.ScaleType = Enum.ScaleType.Slice
+    copyRemBtn.SliceCenter = Rect.new(20, 20, 480, 480)
 
-copyRemLabel.Name = "copyRemLabel"
-copyRemLabel.Parent = copyRemBtn
-copyRemLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-copyRemLabel.BackgroundTransparency = 1.000
-copyRemLabel.BorderSizePixel = 0
-copyRemLabel.Size = UDim2.new(1.00134265, 0, 1, 0)
-copyRemLabel.Font = Enum.Font.SourceSans
-copyRemLabel.Text = "Copy Remote Path"
-copyRemLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
-copyRemLabel.TextSize = 14.000
+    copyRemLabel.Name = "copyRemLabel"
+    copyRemLabel.Parent = copyRemBtn
+    copyRemLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    copyRemLabel.BackgroundTransparency = 1.000
+    copyRemLabel.BorderSizePixel = 0
+    copyRemLabel.Size = UDim2.new(1.00134265, 0, 1, 0)
+    copyRemLabel.Font = Enum.Font.SourceSans
+    copyRemLabel.Text = "Copy Remote Path"
+    copyRemLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
+    copyRemLabel.TextSize = 14.000
 
-muteremoteBtn.Name = "muteremoteBtn"
-muteremoteBtn.Parent = mainFrame
-muteremoteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-muteremoteBtn.BackgroundTransparency = 1.000
-muteremoteBtn.BorderSizePixel = 0
-muteremoteBtn.Position = UDim2.new(0, 408, 0, 323)
-muteremoteBtn.Size = UDim2.new(0, 86, 0, 19)
-muteremoteBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
-muteremoteBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-muteremoteBtn.ImageTransparency = 1.000
-muteremoteBtn.ScaleType = Enum.ScaleType.Slice
-muteremoteBtn.SliceCenter = Rect.new(20, 20, 480, 480)
+    muteremoteBtn.Name = "muteremoteBtn"
+    muteremoteBtn.Parent = mainFrame
+    muteremoteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    muteremoteBtn.BackgroundTransparency = 1.000
+    muteremoteBtn.BorderSizePixel = 0
+    muteremoteBtn.Position = UDim2.new(0, 408, 0, 323)
+    muteremoteBtn.Size = UDim2.new(0, 86, 0, 19)
+    muteremoteBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
+    muteremoteBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    muteremoteBtn.ImageTransparency = 1.000
+    muteremoteBtn.ScaleType = Enum.ScaleType.Slice
+    muteremoteBtn.SliceCenter = Rect.new(20, 20, 480, 480)
 
-text_2.Name = "text"
-text_2.Parent = muteremoteBtn
-text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-text_2.BackgroundTransparency = 1.000
-text_2.BorderSizePixel = 0
-text_2.Size = UDim2.new(1.01176476, 0, 1, 0)
-text_2.Font = Enum.Font.SourceSans
-text_2.Text = "Mute Remote"
-text_2.TextColor3 = Color3.fromRGB(181, 181, 181)
-text_2.TextSize = 14.000
+    text_2.Name = "text"
+    text_2.Parent = muteremoteBtn
+    text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    text_2.BackgroundTransparency = 1.000
+    text_2.BorderSizePixel = 0
+    text_2.Size = UDim2.new(1.01176476, 0, 1, 0)
+    text_2.Font = Enum.Font.SourceSans
+    text_2.Text = "Mute Remote"
+    text_2.TextColor3 = Color3.fromRGB(181, 181, 181)
+    text_2.TextSize = 14.000
 
-unmuteremoteBtn.Name = "unmuteremoteBtn"
-unmuteremoteBtn.Parent = mainFrame
-unmuteremoteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-unmuteremoteBtn.BackgroundTransparency = 1.000
-unmuteremoteBtn.BorderSizePixel = 0
-unmuteremoteBtn.Position = UDim2.new(0, 495, 0, 323)
-unmuteremoteBtn.Size = UDim2.new(0, 86, 0, 19)
-unmuteremoteBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
-unmuteremoteBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-unmuteremoteBtn.ImageTransparency = 1.000
-unmuteremoteBtn.ScaleType = Enum.ScaleType.Slice
-unmuteremoteBtn.SliceCenter = Rect.new(20, 20, 480, 480)
+    unmuteremoteBtn.Name = "unmuteremoteBtn"
+    unmuteremoteBtn.Parent = mainFrame
+    unmuteremoteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    unmuteremoteBtn.BackgroundTransparency = 1.000
+    unmuteremoteBtn.BorderSizePixel = 0
+    unmuteremoteBtn.Position = UDim2.new(0, 495, 0, 323)
+    unmuteremoteBtn.Size = UDim2.new(0, 86, 0, 19)
+    unmuteremoteBtn.Image = "http://www.roblox.com/asset/?id=4530318781"
+    unmuteremoteBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    unmuteremoteBtn.ImageTransparency = 1.000
+    unmuteremoteBtn.ScaleType = Enum.ScaleType.Slice
+    unmuteremoteBtn.SliceCenter = Rect.new(20, 20, 480, 480)
 
-text_3.Name = "text"
-text_3.Parent = unmuteremoteBtn
-text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-text_3.BackgroundTransparency = 1.000
-text_3.BorderSizePixel = 0
-text_3.Size = UDim2.new(1.01176476, 0, 1, 0)
-text_3.Font = Enum.Font.SourceSans
-text_3.Text = "Unmute Remotes"
-text_3.TextColor3 = Color3.fromRGB(181, 181, 181)
-text_3.TextSize = 14.000
+    text_3.Name = "text"
+    text_3.Parent = unmuteremoteBtn
+    text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    text_3.BackgroundTransparency = 1.000
+    text_3.BorderSizePixel = 0
+    text_3.Size = UDim2.new(1.01176476, 0, 1, 0)
+    text_3.Font = Enum.Font.SourceSans
+    text_3.Text = "Unmute Remotes"
+    text_3.TextColor3 = Color3.fromRGB(181, 181, 181)
+    text_3.TextSize = 14.000
 
-topbarFrame.Name = "topbarFrame"
-topbarFrame.Parent = mainFrame
-topbarFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-topbarFrame.BackgroundTransparency = 1.000
-topbarFrame.BorderSizePixel = 0
-topbarFrame.Size = UDim2.new(1, 0, 0, 28)
-topbarFrame.Image = "http://www.roblox.com/asset/?id=4530319192"
-topbarFrame.ImageColor3 = Color3.fromRGB(24, 24, 24)
-topbarFrame.ScaleType = Enum.ScaleType.Slice
-topbarFrame.SliceCenter = Rect.new(20, 20, 480, 480)
+    topbarFrame.Name = "topbarFrame"
+    topbarFrame.Parent = mainFrame
+    topbarFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+    topbarFrame.BackgroundTransparency = 1.000
+    topbarFrame.BorderSizePixel = 0
+    topbarFrame.Size = UDim2.new(1, 0, 0, 28)
+    topbarFrame.Image = "http://www.roblox.com/asset/?id=4530319192"
+    topbarFrame.ImageColor3 = Color3.fromRGB(24, 24, 24)
+    topbarFrame.ScaleType = Enum.ScaleType.Slice
+    topbarFrame.SliceCenter = Rect.new(20, 20, 480, 480)
 
-exitBtn.Name = "exitBtn"
-exitBtn.Parent = topbarFrame
-exitBtn.AnchorPoint = Vector2.new(0, 0.5)
-exitBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-exitBtn.BackgroundTransparency = 1.000
-exitBtn.BorderColor3 = Color3.fromRGB(27, 42, 53)
-exitBtn.BorderSizePixel = 0
-exitBtn.Position = UDim2.new(0, 541, 0.5, 0)
-exitBtn.Size = UDim2.new(0, 19, 0, 19)
-exitBtn.Image = "http://www.roblox.com/asset/?id=4132450915"
-exitBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-exitBtn.ImageTransparency = 1.000
+    exitBtn.Name = "exitBtn"
+    exitBtn.Parent = topbarFrame
+    exitBtn.AnchorPoint = Vector2.new(0, 0.5)
+    exitBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    exitBtn.BackgroundTransparency = 1.000
+    exitBtn.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    exitBtn.BorderSizePixel = 0
+    exitBtn.Position = UDim2.new(0, 541, 0.5, 0)
+    exitBtn.Size = UDim2.new(0, 19, 0, 19)
+    exitBtn.Image = "http://www.roblox.com/asset/?id=4132450915"
+    exitBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    exitBtn.ImageTransparency = 1.000
 
-exitLabel.Name = "exitLabel"
-exitLabel.Parent = exitBtn
-exitLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-exitLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-exitLabel.BackgroundTransparency = 1.000
-exitLabel.BorderSizePixel = 0
-exitLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
-exitLabel.Size = UDim2.new(0, 25, 0, 25)
-exitLabel.Font = Enum.Font.SourceSansLight
-exitLabel.Text = "×"
-exitLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
-exitLabel.TextSize = 35.000
-exitLabel.TextWrapped = true
+    exitLabel.Name = "exitLabel"
+    exitLabel.Parent = exitBtn
+    exitLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+    exitLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    exitLabel.BackgroundTransparency = 1.000
+    exitLabel.BorderSizePixel = 0
+    exitLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+    exitLabel.Size = UDim2.new(0, 25, 0, 25)
+    exitLabel.Font = Enum.Font.SourceSansLight
+    exitLabel.Text = "×"
+    exitLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
+    exitLabel.TextSize = 35.000
+    exitLabel.TextWrapped = true
 
-miniBtn.Name = "miniBtn"
-miniBtn.Parent = topbarFrame
-miniBtn.AnchorPoint = Vector2.new(0, 0.5)
-miniBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-miniBtn.BackgroundTransparency = 1.000
-miniBtn.BorderColor3 = Color3.fromRGB(27, 42, 53)
-miniBtn.BorderSizePixel = 0
-miniBtn.Position = UDim2.new(0, 513, 0.5, 0)
-miniBtn.Size = UDim2.new(0, 19, 0, 19)
-miniBtn.Image = "http://www.roblox.com/asset/?id=4132450915"
-miniBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
-miniBtn.ImageTransparency = 1.000
+    miniBtn.Name = "miniBtn"
+    miniBtn.Parent = topbarFrame
+    miniBtn.AnchorPoint = Vector2.new(0, 0.5)
+    miniBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    miniBtn.BackgroundTransparency = 1.000
+    miniBtn.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    miniBtn.BorderSizePixel = 0
+    miniBtn.Position = UDim2.new(0, 513, 0.5, 0)
+    miniBtn.Size = UDim2.new(0, 19, 0, 19)
+    miniBtn.Image = "http://www.roblox.com/asset/?id=4132450915"
+    miniBtn.ImageColor3 = Color3.fromRGB(140, 30, 49)
+    miniBtn.ImageTransparency = 1.000
 
-miniLabel.Name = "miniLabel"
-miniLabel.Parent = miniBtn
-miniLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-miniLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-miniLabel.BackgroundTransparency = 1.000
-miniLabel.BorderSizePixel = 0
-miniLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
-miniLabel.Size = UDim2.new(0, 25, 0, 25)
-miniLabel.Font = Enum.Font.SourceSansLight
-miniLabel.Text = "—"
-miniLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
-miniLabel.TextSize = 15.000
-miniLabel.TextWrapped = true
+    miniLabel.Name = "miniLabel"
+    miniLabel.Parent = miniBtn
+    miniLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+    miniLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    miniLabel.BackgroundTransparency = 1.000
+    miniLabel.BorderSizePixel = 0
+    miniLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+    miniLabel.Size = UDim2.new(0, 25, 0, 25)
+    miniLabel.Font = Enum.Font.SourceSansLight
+    miniLabel.Text = "—"
+    miniLabel.TextColor3 = Color3.fromRGB(181, 181, 181)
+    miniLabel.TextSize = 15.000
+    miniLabel.TextWrapped = true
 
-sentinelLogo.Name = "sentinelLogo"
-sentinelLogo.Parent = topbarFrame
-sentinelLogo.AnchorPoint = Vector2.new(0, 0.5)
-sentinelLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-sentinelLogo.BackgroundTransparency = 1.000
-sentinelLogo.BorderSizePixel = 0
-sentinelLogo.Position = UDim2.new(0, 2, 0.5, 0)
-sentinelLogo.Size = UDim2.new(0, 24, 0, 24)
-sentinelLogo.ZIndex = 2
-sentinelLogo.Image = "http://www.roblox.com/asset/?id=4543144346"
-sentinelLogo.ScaleType = Enum.ScaleType.Fit
+    sentinelLogo.Name = "sentinelLogo"
+    sentinelLogo.Parent = topbarFrame
+    sentinelLogo.AnchorPoint = Vector2.new(0, 0.5)
+    sentinelLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    sentinelLogo.BackgroundTransparency = 1.000
+    sentinelLogo.BorderSizePixel = 0
+    sentinelLogo.Position = UDim2.new(0, 2, 0.5, 0)
+    sentinelLogo.Size = UDim2.new(0, 24, 0, 24)
+    sentinelLogo.ZIndex = 2
+    sentinelLogo.Image = "http://www.roblox.com/asset/?id=4543144346"
+    sentinelLogo.ScaleType = Enum.ScaleType.Fit
 
--- init
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local TweenService = game:GetService("TweenService")
-local ContentProvider = game:GetService("ContentProvider")
-local function Tween(Object, Property, Style, Direction, Time)
-    return TweenService:Create(Object, TweenInfo.new(Time, Enum.EasingStyle[Style], Enum.EasingDirection[Direction]), Property):Play()
-end
-mainFrame.Visible = true;
---- So things are descending
-vis = true
-local layoutOrderNum = 999999999
---- The event logs to be read from
-logs = {}
---- The event currently selected.Log (defaults to nil)
-selected = nil
---- The blacklist (can be a string name or the Remote Instance)
-blacklist = {}
---- The block list (can be a string name or the Remote Instance)
-blocklist = {}
---- Whether or not to add getNil function
-local getNil = false
---- Array of remotes (and original functions) connected to
-local connectedRemotes = {}
---- True = hookfunction, false = namecall
-local toggle = false
-local gm = getrawmetatable(game)
-local original = gm.__namecall
-setreadonly(gm, false)
---- This event is the main handler for remotes
-local remoteHandlerEvent = Instance.new("BindableEvent")
-
--- functions
---- Toggles the remote spy method (when button clicked)
-function onToggleButtonClick()
-    if toggle then
-        enablespy.text.Text = "Disabled"
-    else
-        enablespy.text.Text = "Enabled"
+    -- init
+    local RunService = game:GetService("RunService")
+    local UserInputService = game:GetService("UserInputService")
+    local TweenService = game:GetService("TweenService")
+    local ContentProvider = game:GetService("ContentProvider")
+    local function Tween(Object, Property, Style, Direction, Time)
+        return TweenService:Create(Object, TweenInfo.new(Time, Enum.EasingStyle[Style], Enum.EasingDirection[Direction]), Property):Play()
     end
-    toggleSpyMethod()
-end
+    mainFrame.Visible = true;
+    --- So things are descending
+    vis = true
+    local layoutOrderNum = 999999999
+    --- The event logs to be read from
+    logs = {}
+    --- The event currently selected.Log (defaults to nil)
+    selected = nil
+    --- The blacklist (can be a string name or the Remote Instance)
+    blacklist = {}
+    --- The block list (can be a string name or the Remote Instance)
+    blocklist = {}
+    --- Whether or not to add getNil function
+    local getNil = false
+    --- Array of remotes (and original functions) connected to
+    local connectedRemotes = {}
+    --- True = hookfunction, false = namecall
+    local toggle = false
+    local gm = getrawmetatable(game)
+    local original = gm.__namecall
+    setreadonly(gm, false)
+    --- This event is the main handler for remotes
+    local remoteHandlerEvent = Instance.new("BindableEvent")
 
---- Checks if the given Remote is blacklisted; returns true if blacklisted, false if not
-function blacklisted(remote)
-    if #blacklist > 0 then
-        for _, v in pairs(blacklist) do
-            if type(v) == "string" and v == remote.Name then
-                return true
-            elseif typeof(v) == "Instance" and v == remote then
-                return true
-            end
+    -- functions
+    --- Toggles the remote spy method (when button clicked)
+    function onToggleButtonClick()
+        if toggle then
+            enablespy.text.Text = "Disabled"
+        else
+            enablespy.text.Text = "Enabled"
         end
+        toggleSpyMethod()
     end
-    return false
-end
 
---- Checks if the given Remote is blocked; returns true if blacklisted, false if not
-function blocked(remote)
-    if #blocklist > 0 then
-        for _, v in pairs(blocklist) do
-            if type(v) == "string" and v == remote.Name then
-                return true
-            elseif typeof(v) == "Instance" and v == remote then
-                return true
-            end
-        end
-    end
-    return false
-end
-
---- Runs on MouseButton1Click of an event frame
-function eventSelect(frame)
-    if --[[input.UserInputType == Enum.UserInputType.MouseButton1 and]] (not selected or selected.Log ~= frame) then
-        if selected then
-            TweenService:Create(selected.Log, TweenInfo.new(0.5), {BorderColor3 = deselectedColor, BorderSizePixel = 1}):Play(
-
-            )
-            selected = nil
-        end
-        for _, v in pairs(logs) do
-            if frame == v.Log then
-                selected = v
-            end
-        end
-        if selected then
-            TweenService:Create(selected.Log, TweenInfo.new(0.5), {BorderColor3 = selectedColor, BorderSizePixel = 2}):Play(
-
-            )
-            codebox.Text = selected.GenScript
-        end
-    end
-end
-
---- Adds new RemoteEvent to logs
-function newEvent(name, gen_script, remote, source_script, blocked, upvalues, constants, num)
-    local remoteFrame = eTemplate:Clone()
-    remoteFrame.name.Text = name
-    local id = Instance.new("IntValue")
-    id.Name = "ID"
-    id.Value = #logs + 1
-    id.Parent = remoteFrame
-    logs[#logs + 1] = {
-        Name = name,
-        GenScript = gen_script,
-        Source = source_script,
-        Remote = remote,
-        Log = remoteFrame,
-        Upvalues = upvalues,
-        Constants = constants,
-        Blocked = blocked,
-        FunNum = num
-    }
-    if blocked then
-        logs[#logs].GenScript = "-- THIS REMOTE WAS PREVENTED FROM FIRING THE SERVER BY SIMPLESPY\n\n" .. logs[#logs].GenScript
-    end
-    remoteFrame.MouseButton1Click:Connect(
-        function(...)
-            eventSelect(remoteFrame, ...)
-        end
-    )
-    if layoutOrderNum < 1 then
-        layoutOrderNum = 999999999
-    end
-    remoteFrame.LayoutOrder = layoutOrderNum
-    layoutOrderNum = layoutOrderNum - 1
-    remoteFrame.Parent = remotesScrollingFrame
-end
-
---- Adds new RemoteFunction to logs
-function newFunction(name, gen_script, remote, source_script, blocked, upvalues, constants, num)
-    local remoteFrame = fTemplate:Clone()
-    remoteFrame.name.Text = name
-    local id = Instance.new("IntValue")
-    id.Name = "ID"
-    id.Value = #logs + 1
-    id.Parent = remoteFrame
-    logs[#logs + 1] = {
-        Name = name,
-        GenScript = gen_script,
-        Source = source_script,
-        Remote = remote,
-        Log = remoteFrame,
-        Upvalues = upvalues,
-        Constants = constants,
-        Blocked = blocked,
-        FunNum = num
-    }
-    if blocked then
-        logs[#logs].GenScript = "-- THIS REMOTE WAS PREVENTED FROM FIRING THE SERVER BY SIMPLESPY\n\n" .. logs[#logs].GenScript
-    end
-    remoteFrame.MouseButton1Click:Connect(
-        function(...)
-            eventSelect(remoteFrame, ...)
-        end
-    )
-    if layoutOrderNum < 1 then
-        layoutOrderNum = 999999999
-    end
-    remoteFrame.LayoutOrder = layoutOrderNum
-    layoutOrderNum = layoutOrderNum - 1
-    remoteFrame.Parent = remotesScrollingFrame
-end
-
---- Generates a script from the provided arguments (first has to be remote path)
-function genScript(remote, ...)
-    local gen = ""
-    local args = {...}
-    if #args > 0 then
-        if
-            not pcall(
-                function()
-                    gen = gen .. "local args = " .. tableToString(args) .. "\n\n"
+    --- Checks if the given Remote is blacklisted; returns true if blacklisted, false if not
+    function blacklisted(remote)
+        if #blacklist > 0 then
+            for _, v in pairs(blacklist) do
+                if type(v) == "string" and v == remote.Name then
+                    return true
+                elseif typeof(v) == "Instance" and v == remote then
+                    return true
                 end
-            )
-         then
-            gen =
-                gen .. "-- TableToString failure! Reverting to legacy functionality (results may vary)\nlocal args = {"
+            end
+        end
+        return false
+    end
+
+    --- Checks if the given Remote is blocked; returns true if blacklisted, false if not
+    function blocked(remote)
+        if #blocklist > 0 then
+            for _, v in pairs(blocklist) do
+                if type(v) == "string" and v == remote.Name then
+                    return true
+                elseif typeof(v) == "Instance" and v == remote then
+                    return true
+                end
+            end
+        end
+        return false
+    end
+
+    --- Runs on MouseButton1Click of an event frame
+    function eventSelect(frame)
+        if --[[input.UserInputType == Enum.UserInputType.MouseButton1 and]] (not selected or selected.Log ~= frame) then
+            if selected then
+                TweenService:Create(selected.Log, TweenInfo.new(0.5), {BorderColor3 = deselectedColor, BorderSizePixel = 1}):Play(
+
+                )
+                selected = nil
+            end
+            for _, v in pairs(logs) do
+                if frame == v.Log then
+                    selected = v
+                end
+            end
+            if selected then
+                TweenService:Create(selected.Log, TweenInfo.new(0.5), {BorderColor3 = selectedColor, BorderSizePixel = 2}):Play(
+
+                )
+                codebox.Text = selected.GenScript
+            end
+        end
+    end
+
+    --- Adds new RemoteEvent to logs
+    function newEvent(name, gen_script, remote, source_script, blocked, upvalues, constants, num)
+        local remoteFrame = eTemplate:Clone()
+        remoteFrame.name.Text = name
+        local id = Instance.new("IntValue")
+        id.Name = "ID"
+        id.Value = #logs + 1
+        id.Parent = remoteFrame
+        logs[#logs + 1] = {
+            Name = name,
+            GenScript = gen_script,
+            Source = source_script,
+            Remote = remote,
+            Log = remoteFrame,
+            Upvalues = upvalues,
+            Constants = constants,
+            Blocked = blocked,
+            FunNum = num
+        }
+        if blocked then
+            logs[#logs].GenScript = "-- THIS REMOTE WAS PREVENTED FROM FIRING THE SERVER BY SIMPLESPY\n\n" .. logs[#logs].GenScript
+        end
+        remoteFrame.MouseButton1Click:Connect(
+            function(...)
+                eventSelect(remoteFrame, ...)
+            end
+        )
+        if layoutOrderNum < 1 then
+            layoutOrderNum = 999999999
+        end
+        remoteFrame.LayoutOrder = layoutOrderNum
+        layoutOrderNum = layoutOrderNum - 1
+        remoteFrame.Parent = remotesScrollingFrame
+    end
+
+    --- Adds new RemoteFunction to logs
+    function newFunction(name, gen_script, remote, source_script, blocked, upvalues, constants, num)
+        local remoteFrame = fTemplate:Clone()
+        remoteFrame.name.Text = name
+        local id = Instance.new("IntValue")
+        id.Name = "ID"
+        id.Value = #logs + 1
+        id.Parent = remoteFrame
+        logs[#logs + 1] = {
+            Name = name,
+            GenScript = gen_script,
+            Source = source_script,
+            Remote = remote,
+            Log = remoteFrame,
+            Upvalues = upvalues,
+            Constants = constants,
+            Blocked = blocked,
+            FunNum = num
+        }
+        if blocked then
+            logs[#logs].GenScript = "-- THIS REMOTE WAS PREVENTED FROM FIRING THE SERVER BY SIMPLESPY\n\n" .. logs[#logs].GenScript
+        end
+        remoteFrame.MouseButton1Click:Connect(
+            function(...)
+                eventSelect(remoteFrame, ...)
+            end
+        )
+        if layoutOrderNum < 1 then
+            layoutOrderNum = 999999999
+        end
+        remoteFrame.LayoutOrder = layoutOrderNum
+        layoutOrderNum = layoutOrderNum - 1
+        remoteFrame.Parent = remotesScrollingFrame
+    end
+
+    --- Generates a script from the provided arguments (first has to be remote path)
+    function genScript(remote, ...)
+        local gen = ""
+        local args = {...}
+        if #args > 0 then
             if
                 not pcall(
                     function()
-                        for i, v in pairs(args) do
-                            if type(i) ~= "Instance" and type(i) ~= "userdata" then
-                                gen = gen .. "\n    [" .. tostring(i) .. "] = "
-                            elseif type(i) == "string" then
-                                gen = gen .. '\n    ["' .. tostring(i) .. '"] = '
-                            elseif type(i) == "userdata" and typeof(i) ~= "Instance" then
-                                gen = gen .. "\n    [" .. typeof(i) .. ".new(" .. tostring(i) .. ")] = "
-                            elseif type(i) == "userdata" then
-                                gen = gen .. "\n    [game." .. i:GetFullName() .. ")] = "
-                            end
-                            if type(v) ~= "Instance" and type(v) ~= "userdata" then
-                                gen = gen .. tostring(v)
-                            elseif type(v) == "string" then
-                                gen = gen .. '"' .. tostring(v) .. '"'
-                            elseif type(v) == "userdata" and typeof(v) ~= "Instance" then
-                                gen = gen .. typeof(v) .. ".new(" .. tostring(v) .. ")"
-                            elseif type(v) == "userdata" then
-                                gen = gen .. "game." .. v:GetFullName()
-                            end
-                        end
-                        gen = gen .. "\n}\n\n"
+                        gen = gen .. "local args = " .. tableToString(args) .. "\n\n"
                     end
                 )
-             then
-                gen = gen .. "}\n-- Legacy tableToString failure! Unable to decompile."
+            then
+                gen =
+                    gen .. "-- TableToString failure! Reverting to legacy functionality (results may vary)\nlocal args = {"
+                if
+                    not pcall(
+                        function()
+                            for i, v in pairs(args) do
+                                if type(i) ~= "Instance" and type(i) ~= "userdata" then
+                                    gen = gen .. "\n    [" .. tostring(i) .. "] = "
+                                elseif type(i) == "string" then
+                                    gen = gen .. '\n    ["' .. tostring(i) .. '"] = '
+                                elseif type(i) == "userdata" and typeof(i) ~= "Instance" then
+                                    gen = gen .. "\n    [" .. typeof(i) .. ".new(" .. tostring(i) .. ")] = "
+                                elseif type(i) == "userdata" then
+                                    gen = gen .. "\n    [game." .. i:GetFullName() .. ")] = "
+                                end
+                                if type(v) ~= "Instance" and type(v) ~= "userdata" then
+                                    gen = gen .. tostring(v)
+                                elseif type(v) == "string" then
+                                    gen = gen .. '"' .. tostring(v) .. '"'
+                                elseif type(v) == "userdata" and typeof(v) ~= "Instance" then
+                                    gen = gen .. typeof(v) .. ".new(" .. tostring(v) .. ")"
+                                elseif type(v) == "userdata" then
+                                    gen = gen .. "game." .. v:GetFullName()
+                                end
+                            end
+                            gen = gen .. "\n}\n\n"
+                        end
+                    )
+                then
+                    gen = gen .. "}\n-- Legacy tableToString failure! Unable to decompile."
+                end
+            end
+            if remote:IsA("RemoteEvent") then
+                gen = gen .. typeToString(remote) .. ":FireServer(unpack(args))"
+            elseif remote:IsA("RemoteFunction") then
+                gen = gen .. typeToString(remote) .. ":InvokeServer(unpack(args))"
+            end
+        else
+            if remote:IsA("RemoteEvent") then
+                gen = gen .. typeToString(remote) .. ":FireServer()"
+            elseif remote:IsA("RemoteFunction") then
+                gen = gen .. typeToString(remote) .. ":InvokeServer()"
             end
         end
-        if remote:IsA("RemoteEvent") then
-            gen = gen .. typeToString(remote) .. ":FireServer(unpack(args))"
-        elseif remote:IsA("RemoteFunction") then
-            gen = gen .. typeToString(remote) .. ":InvokeServer(unpack(args))"
+        if getNil then
+            gen =
+                "function getNil(name,class) for _,v in pairs(getnilinstances())do if v.ClassName==class and v.Name==name then return v;end end end\n\n" ..
+                gen
+            getNil = false
         end
-    else
-        if remote:IsA("RemoteEvent") then
-            gen = gen .. typeToString(remote) .. ":FireServer()"
-        elseif remote:IsA("RemoteFunction") then
-            gen = gen .. typeToString(remote) .. ":InvokeServer()"
-        end
-    end
-    if getNil then
         gen =
-            "function getNil(name,class) for _,v in pairs(getnilinstances())do if v.ClassName==class and v.Name==name then return v;end end end\n\n" ..
+            "" ..
             gen
-        getNil = false
+        return gen
     end
-    gen =
-        "" ..
-        gen
-    return gen
-end
 
---- Generates spaces based on the provided level
-function space(level)
-    local out = ""
-    for i = 1, level do
-        out = out .. " "
+    --- Generates spaces based on the provided level
+    function space(level)
+        local out = ""
+        for i = 1, level do
+            out = out .. " "
+        end
+        return out
     end
-    return out
-end
 
---- Adds \'s to the text as a replacement to whitespace chars and other things
-function getSpecials(s, nested)
-    if not nested then
-        s = s:gsub("\\", "\\\\")
-    end
-    if s:match("\n") then
-        local pos, pos2 = s:find("\n")
-        s = s:sub(0, pos - 1) .. "\\n" .. s:sub(pos2 + 1, s:len())
-        return getSpecials(s, true)
-    elseif s:match("\t") then
-        local pos, pos2 = s:find("\t")
-        s = s:sub(0, pos - 1) .. "\\t" .. s:sub(pos2 + 1, s:len())
-        return getSpecials(s, true)
-    elseif s:match("\t") then
-        local pos, pos2 = s:find("\t")
-        s = s:sub(0, pos - 1) .. "\\t" .. s:sub(pos2 + 1, s:len())
-        return getSpecials(s, true)
-    elseif s:match("\"") and (s:sub(s:find("\"") - 1, s:find("\"") - 1) ~= "\\") then
-        local pos, pos2 = s:find("\"")
-        s = s:sub(0, pos - 1) .. "\\\"" .. s:sub(pos2 + 1, s:len())
-        return getSpecials(s, true)
-    elseif s:match("'") and (s:sub(s:find("'") - 1, s:find("'") - 1) ~= "\\") then
-        local pos, pos2 = s:find("'")
-        s = s:sub(0, pos - 1) .. "\\'" .. s:sub(pos2 + 1, s:len())
-        return getSpecials(s, true)
-    else
-        return s
-    end
-end
-
---- Converts a var to a string (including userdata)
-function typeToString(var, level)
-    if not level then
-        level = 4
-    end
-    local out = ""
-    if type(var) ~= "userdata" and type(var) ~= "table" and type(var) ~= "string" then
-        -- Number, booleans
-        out = out .. tostring(var)
-    elseif type(var) == "string" then
-        -- Strings
-        out = out .. '"' .. getSpecials(var) .. '"'
-    elseif type(var) == "table" then
-        -- Tables
-        out = out .. tableToString(var, level)
-    elseif typeof(var) == "TweenInfo" then
-        -- TweenInfo
-        out =
-            out ..
-            "TweenInfo.new(" ..
-                tostring(var.Time) ..
-                    ", Enum.EasingStyle." ..
-                        tostring(var.EasingStyle) ..
-                            ", Enum.EasingDirection." ..
-                                tostring(var.EasingDirection) ..
-                                    ", " ..
-                                        tostring(var.RepeatCount) ..
-                                            ", " .. tostring(var.Reverses) .. ", " .. tostring(var.DelayTime) .. ")"
-    elseif typeof(var) == "Ray" then
-        -- Ray
-        out =
-            out ..
-            "Ray.new(Vector3.new(" .. tostring(var.Origin) .. "), Vector3.new(" .. tostring(var.Direction) .. "))"
-    elseif typeof(var) == "NumberSequence" then
-        -- NumberSequence
-        out = out .. "NumberSequence.new("
-        for i, v in pairs(var.KeyPoints) do
-            out = out .. tostring(v)
-            if i < #var.Keypoints then
-                out = out .. ", "
-            end
+    --- Adds \'s to the text as a replacement to whitespace chars and other things
+    function getSpecials(s, nested)
+        if not nested then
+            s = s:gsub("\\", "\\\\")
         end
-        out = out .. ")"
-    elseif typeof(var) == "DockWidgetPluginGuiInfo" then
-        -- DockWidgetPluginGuiInfo
-        out = out .. "DockWidgetPluginGuiInfo.new(Enum.InitialDockState" .. tostring(var) .. ")"
-    elseif typeof(var) == "ColorSequence" then
-        -- ColorSequence
-        out = out .. "ColorSequence.new("
-        for i, v in pairs(var.KeyPoints) do
-            out = out .. "Color3.new(" .. tostring(v) .. ")"
-            if i < #var.Keypoints then
-                out = out .. ", "
-            end
-        end
-        out = out .. ")"
-    elseif typeof(var) == "BrickColor" then
-        -- BrickColor
-        out = out .. "BrickColor.new(" .. tostring(var.Number) .. ")"
-    elseif typeof(var) == "NumberRange" then
-        -- NumberRange
-        out = out .. "NumberRange.new(" .. tostring(var.Min) .. ", " .. tostring(var.Max) .. ")"
-    elseif typeof(var) == "Region3" then
-        -- Region3
-        local center = var.CFrame.Position
-        local size = var.CFrame.Size
-        local vector1 = center - size / 2
-        local vector2 = center + size / 2
-        out = out .. "Region3.new(Vector3.new(" .. tostring(vector1) .. "), Vector3.new(" .. tostring(vector2) .. ")"
-    elseif type(var) == "userdata" and typeof(var) ~= "Instance" then
-        -- Default userdata (no instances)
-        local dataName = typeof(var)
-        local args = tostring(var)
-        for i = 1, args:len() do
-            if args:sub(i, i) == "}" or args:sub(i, i) == "{" then
-                if i > 1 and i < args:len() then
-                    args = args:sub(1, i - 1) .. " " .. args:sub(i + 1, args:len())
-                elseif i == 1 then
-                    args = " " .. args:sub(i + 1, args:len())
-                elseif i == args:len() then
-                    args = args:sub(1, i - 1) .. " "
-                end
-            end
-        end
-        out = out .. dataName .. ".new(" .. args .. ")"
-    elseif type(var) == "userdata" and typeof(var) == "Instance" then
-        -- Instances
-        local parent = var
-        if parent == nil then
-            out = "nil"
-        elseif parent ~= game then
-            while true do
-                if parent and parent.Parent == game then
-                    if game:GetService(parent.ClassName) then
-                        if parent.ClassName == "Workspace" then
-                            out = "workspace" .. out
-                        else
-                            out = 'game:GetService("' .. parent.ClassName .. '")' .. out
-                        end
-                        break
-                    else
-                        out = 'game["' .. getSpecials(parent.Name) .. '"]'
-                        break
-                    end
-                elseif parent.Parent == nil then
-                    getNil = true
-                    out = 'getNil("' .. getSpecials(parent.Name) .. '", "' .. parent.ClassName .. '")'
-                    break
-                else
-                    if parent.Name:match("%a+") ~= parent.Name then
-                        out = '["' .. getSpecials(parent.Name) .. '"]' .. out
-                    else
-                        out = "." .. parent.Name .. out
-                    end
-                end
-                parent = parent.Parent
-            end
+        if s:match("\n") then
+            local pos, pos2 = s:find("\n")
+            s = s:sub(0, pos - 1) .. "\\n" .. s:sub(pos2 + 1, s:len())
+            return getSpecials(s, true)
+        elseif s:match("\t") then
+            local pos, pos2 = s:find("\t")
+            s = s:sub(0, pos - 1) .. "\\t" .. s:sub(pos2 + 1, s:len())
+            return getSpecials(s, true)
+        elseif s:match("\t") then
+            local pos, pos2 = s:find("\t")
+            s = s:sub(0, pos - 1) .. "\\t" .. s:sub(pos2 + 1, s:len())
+            return getSpecials(s, true)
+        elseif s:match("\"") and (s:sub(s:find("\"") - 1, s:find("\"") - 1) ~= "\\") then
+            local pos, pos2 = s:find("\"")
+            s = s:sub(0, pos - 1) .. "\\\"" .. s:sub(pos2 + 1, s:len())
+            return getSpecials(s, true)
+        elseif s:match("'") and (s:sub(s:find("'") - 1, s:find("'") - 1) ~= "\\") then
+            local pos, pos2 = s:find("'")
+            s = s:sub(0, pos - 1) .. "\\'" .. s:sub(pos2 + 1, s:len())
+            return getSpecials(s, true)
         else
-            out = "game"
+            return s
         end
-    -- legacy method
-    -- out = out .. "game." .. var:GetFullName() .. ","
     end
-    return out
-end
 
---- Converts a var to a string (including userdata)
-function typeToString(var, level)
-    if not level then
-        level = 4
-    end
-    local out = ""
-    if type(var) ~= "userdata" and type(var) ~= "table" and type(var) ~= "string" then
-        -- Number, booleans
-        out = out .. tostring(var)
-    elseif type(var) == "string" then
-        -- Strings
-        out = out .. '"' .. getSpecials(var) .. '"'
-    elseif type(var) == "table" then
-        -- Tables
-        out = out .. tableToString(var, level)
-    elseif typeof(var) == "TweenInfo" then
-        -- TweenInfo
-        out =
-            out ..
-            "TweenInfo.new(" ..
-                tostring(var.Time) ..
-                    ", Enum.EasingStyle." ..
-                        tostring(var.EasingStyle) ..
-                            ", Enum.EasingDirection." ..
-                                tostring(var.EasingDirection) ..
-                                    ", " ..
-                                        tostring(var.RepeatCount) ..
-                                            ", " .. tostring(var.Reverses) .. ", " .. tostring(var.DelayTime) .. ")"
-    elseif typeof(var) == "Ray" then
-        -- Ray
-        out =
-            out ..
-            "Ray.new(Vector3.new(" .. tostring(var.Origin) .. "), Vector3.new(" .. tostring(var.Direction) .. "))"
-    elseif typeof(var) == "NumberSequence" then
-        -- NumberSequence
-        out = out .. "NumberSequence.new("
-        for i, v in pairs(var.KeyPoints) do
-            out = out .. tostring(v)
-            if i < #var.Keypoints then
-                out = out .. ", "
-            end
+    --- Converts a var to a string (including userdata)
+    function typeToString(var, level)
+        if not level then
+            level = 4
         end
-        out = out .. ")"
-    elseif typeof(var) == "DockWidgetPluginGuiInfo" then
-        -- DockWidgetPluginGuiInfo
-        out = out .. "DockWidgetPluginGuiInfo.new(Enum.InitialDockState" .. tostring(var) .. ")"
-    elseif typeof(var) == "ColorSequence" then
-        -- ColorSequence
-        out = out .. "ColorSequence.new("
-        for i, v in pairs(var.KeyPoints) do
-            out = out .. "Color3.new(" .. tostring(v) .. ")"
-            if i < #var.Keypoints then
-                out = out .. ", "
-            end
-        end
-        out = out .. ")"
-    elseif typeof(var) == "BrickColor" then
-        -- BrickColor
-        out = out .. "BrickColor.new(" .. tostring(var.Number) .. ")"
-    elseif typeof(var) == "NumberRange" then
-        -- NumberRange
-        out = out .. "NumberRange.new(" .. tostring(var.Min) .. ", " .. tostring(var.Max) .. ")"
-    elseif typeof(var) == "Region3" then
-        -- Region3
-        local center = var.CFrame.Position
-        local size = var.CFrame.Size
-        local vector1 = center - size / 2
-        local vector2 = center + size / 2
-        out = out .. "Region3.new(Vector3.new(" .. tostring(vector1) .. "), Vector3.new(" .. tostring(vector2) .. ")"
-    elseif type(var) == "userdata" and typeof(var) ~= "Instance" then
-        -- Default userdata (no instances)
-        local dataName = typeof(var)
-        local args = tostring(var)
-        for i = 1, args:len() do
-            if args:sub(i, i) == "}" or args:sub(i, i) == "{" then
-                if i > 1 and i < args:len() then
-                    args = args:sub(1, i - 1) .. " " .. args:sub(i + 1, args:len())
-                elseif i == 1 then
-                    args = " " .. args:sub(i + 1, args:len())
-                elseif i == args:len() then
-                    args = args:sub(1, i - 1) .. " "
+        local out = ""
+        if type(var) ~= "userdata" and type(var) ~= "table" and type(var) ~= "string" then
+            -- Number, booleans
+            out = out .. tostring(var)
+        elseif type(var) == "string" then
+            -- Strings
+            out = out .. '"' .. getSpecials(var) .. '"'
+        elseif type(var) == "table" then
+            -- Tables
+            out = out .. tableToString(var, level)
+        elseif typeof(var) == "TweenInfo" then
+            -- TweenInfo
+            out =
+                out ..
+                "TweenInfo.new(" ..
+                    tostring(var.Time) ..
+                        ", Enum.EasingStyle." ..
+                            tostring(var.EasingStyle) ..
+                                ", Enum.EasingDirection." ..
+                                    tostring(var.EasingDirection) ..
+                                        ", " ..
+                                            tostring(var.RepeatCount) ..
+                                                ", " .. tostring(var.Reverses) .. ", " .. tostring(var.DelayTime) .. ")"
+        elseif typeof(var) == "Ray" then
+            -- Ray
+            out =
+                out ..
+                "Ray.new(Vector3.new(" .. tostring(var.Origin) .. "), Vector3.new(" .. tostring(var.Direction) .. "))"
+        elseif typeof(var) == "NumberSequence" then
+            -- NumberSequence
+            out = out .. "NumberSequence.new("
+            for i, v in pairs(var.KeyPoints) do
+                out = out .. tostring(v)
+                if i < #var.Keypoints then
+                    out = out .. ", "
                 end
             end
-        end
-        out = out .. dataName .. ".new(" .. args .. ")"
-    elseif type(var) == "userdata" and typeof(var) == "Instance" then
-        -- Instances
-        local parent = var
-        if parent == nil then
-            out = "nil"
-        elseif parent ~= game then
-            while true do
-                if parent and parent.Parent == game then
-                    if game:GetService(parent.ClassName) then
-                        if parent.ClassName == "Workspace" then
-                            out = "workspace" .. out
+            out = out .. ")"
+        elseif typeof(var) == "DockWidgetPluginGuiInfo" then
+            -- DockWidgetPluginGuiInfo
+            out = out .. "DockWidgetPluginGuiInfo.new(Enum.InitialDockState" .. tostring(var) .. ")"
+        elseif typeof(var) == "ColorSequence" then
+            -- ColorSequence
+            out = out .. "ColorSequence.new("
+            for i, v in pairs(var.KeyPoints) do
+                out = out .. "Color3.new(" .. tostring(v) .. ")"
+                if i < #var.Keypoints then
+                    out = out .. ", "
+                end
+            end
+            out = out .. ")"
+        elseif typeof(var) == "BrickColor" then
+            -- BrickColor
+            out = out .. "BrickColor.new(" .. tostring(var.Number) .. ")"
+        elseif typeof(var) == "NumberRange" then
+            -- NumberRange
+            out = out .. "NumberRange.new(" .. tostring(var.Min) .. ", " .. tostring(var.Max) .. ")"
+        elseif typeof(var) == "Region3" then
+            -- Region3
+            local center = var.CFrame.Position
+            local size = var.CFrame.Size
+            local vector1 = center - size / 2
+            local vector2 = center + size / 2
+            out = out .. "Region3.new(Vector3.new(" .. tostring(vector1) .. "), Vector3.new(" .. tostring(vector2) .. ")"
+        elseif type(var) == "userdata" and typeof(var) ~= "Instance" then
+            -- Default userdata (no instances)
+            local dataName = typeof(var)
+            local args = tostring(var)
+            for i = 1, args:len() do
+                if args:sub(i, i) == "}" or args:sub(i, i) == "{" then
+                    if i > 1 and i < args:len() then
+                        args = args:sub(1, i - 1) .. " " .. args:sub(i + 1, args:len())
+                    elseif i == 1 then
+                        args = " " .. args:sub(i + 1, args:len())
+                    elseif i == args:len() then
+                        args = args:sub(1, i - 1) .. " "
+                    end
+                end
+            end
+            out = out .. dataName .. ".new(" .. args .. ")"
+        elseif type(var) == "userdata" and typeof(var) == "Instance" then
+            -- Instances
+            local parent = var
+            if parent == nil then
+                out = "nil"
+            elseif parent ~= game then
+                while true do
+                    if parent and parent.Parent == game then
+                        if game:GetService(parent.ClassName) then
+                            if parent.ClassName == "Workspace" then
+                                out = "workspace" .. out
+                            else
+                                out = 'game:GetService("' .. parent.ClassName .. '")' .. out
+                            end
+                            break
                         else
-                            out = 'game:GetService("' .. parent.ClassName .. '")' .. out
+                            out = 'game["' .. getSpecials(parent.Name) .. '"]'
+                            break
                         end
+                    elseif parent.Parent == nil then
+                        getNil = true
+                        out = 'getNil("' .. getSpecials(parent.Name) .. '", "' .. parent.ClassName .. '")'
                         break
                     else
-                        out = 'game["' .. getSpecials(parent.Name) .. '"]'
-                        break
+                        if parent.Name:match("%a+") ~= parent.Name then
+                            out = '["' .. getSpecials(parent.Name) .. '"]' .. out
+                        else
+                            out = "." .. parent.Name .. out
+                        end
                     end
-                elseif parent.Parent == nil then
-                    getNil = true
-                    out = 'getNil("' .. getSpecials(parent.Name) .. '", "' .. parent.ClassName .. '")'
-                    break
-                else
-                    if parent.Name:match("%a+") ~= parent.Name then
-                        out = '["' .. getSpecials(parent.Name) .. '"]' .. out
-                    else
-                        out = "." .. parent.Name .. out
-                    end
+                    parent = parent.Parent
                 end
-                parent = parent.Parent
-            end
-        else
-            out = "game"
-        end
-    -- legacy method
-    -- out = out .. "game." .. var:GetFullName() .. ","
-    end
-    return out
-end
-
---- Converts a table to a string (includes nested tables)
-function tableToString(t, level)
-    if type(level) ~= "number" then
-        level = 4
-    else
-        level = level + 4
-    end
-    local out = ""
-    for i, v in pairs(t) do
-        out = out .. "\n" .. space(level) .. "[" .. typeToString(i, level) .. "] = " .. typeToString(v, level) .. ","
-    end
-    out = "{" .. out .. "\n" .. space(level - 4) .. "}"
-    return out
-end
-
---- Toggles on and off the Hookfunction remote spy method (DISABLED- will not run)
-function toggleHook()
-    if toggle then
-        -- local function connect(remote)
-        --     spawn(
-        --         function()
-        --             if remote:IsA("RemoteEvent") then
-        --                 local old
-        --                 old =
-        --                     hookfunction(
-        --                     remote.FireServer,
-        --                     function(...)
-        --                         newEvent(remote.Name, genScript(remote, ...), remote, rawget(getfenv(2), "script"))
-        --                         return old(...)
-        --                     end
-        --                 )
-        --                 table.insert(connectedRemotes, {remote, old})
-        --             elseif remote:IsA("RemoteFunction") then
-        --                 local old
-        --                 old =
-        --                     hookfunction(
-        --                     remote.InvokeServer,
-        --                     function(...)
-        --                         newEvent(remote.Name, genScript(remote, ...), remote, rawget(getfenv(2), "script"))
-        --                         return old(...)
-        --                     end
-        --                 )
-        --                 table.insert(connectedRemotes, {remote, old})
-        --             end
-        --         end
-        --     )
-        -- end
-        -- game.ChildAdded:Connect(
-        --     function(c)
-        --         pcall(
-        --             function()
-        --                 if c:IsA("RemoteEvent") and c:IsA("RemoteFunction") then
-        --                     connect(c)
-        --                 end
-        --             end
-        --         )
-        --     end
-        -- )
-        -- spawn(
-        --     function()
-        --         for _, v in pairs(game:GetDescendants()) do
-        --             if toggle then
-        --                 pcall(
-        --                     function()
-        --                         if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
-        --                             connect(v)
-        --                         end
-        --                     end
-        --                 )
-        --                 wait()
-        --             end
-        --         end
-        --     end
-        -- )
-    else
-        -- for _, v in pairs(connectedRemotes) do
-        --     if v[1] and v[2] then
-        --         if v[1]:IsA("RemoteEvent") then
-        --             hookfunction(v[1].FireServer, v[2])
-        --         elseif v[1]:IsA("RemoteFunction") then
-        --             hookfunction(v[1].InvokeServer, v[2])
-        --         end
-        --     end
-        -- end
-        -- connectedRemotes = {}
-    end
-end
-
---- Toggles on and off the namecall remote spy method
-function toggleNamecall()
-    if not toggle then
-        gm.__namecall = function(...)
-            local args = {...}
-            local remote = args[1]
-            local methodName = getnamecallmethod()
-            if methodName == "FireServer" and not blacklisted(remote) then
-                table.remove(args, 1)
-                local script = rawget(getfenv(2), "script")
-                local func = debug.getinfo(2).func
-                spawn(
-                    function()
-                        local funNum
-                        for i, v in pairs(getgc()) do
-                            if v == func then
-                                funNum = i
-                                break
-                            end
-                        end
-                        remoteHandlerEvent:Fire("RemoteEvent", remote.Name, genScript(remote, unpack(args)), remote, script, blocked(remote), tableToString(debug.getupvalues(func)), tableToString(debug.getconstants(func)), funNum)
-                    end
-                )
-            elseif methodName == "InvokeServer" and not blacklisted(remote) then
-                table.remove(args, 1)
-                local script = rawget(getfenv(2), "script")
-                local func = debug.getinfo(2).func
-                spawn(
-                    function()
-                        local funNum
-                        for i, v in pairs(getgc()) do
-                            if v == func then
-                                funNum = i
-                                break
-                            end
-                        end
-                        remoteHandlerEvent:Fire("RemoteFunction", remote.Name, genScript(remote, unpack(args)), remote, script, blocked(remote), tableToString(debug.getupvalues(func)), tableToString(debug.getconstants(func)), funNum)
-                    end
-                )
-            end
-            if (methodName == "InvokeServer" or methodName == "FireServer") and blocked(remote) then
-                return nil
             else
-                return original(...)
+                out = "game"
             end
+        -- legacy method
+        -- out = out .. "game." .. var:GetFullName() .. ","
         end
+        return out
+    end
+
+    --- Converts a var to a string (including userdata)
+    function typeToString(var, level)
+        if not level then
+            level = 4
+        end
+        local out = ""
+        if type(var) ~= "userdata" and type(var) ~= "table" and type(var) ~= "string" then
+            -- Number, booleans
+            out = out .. tostring(var)
+        elseif type(var) == "string" then
+            -- Strings
+            out = out .. '"' .. getSpecials(var) .. '"'
+        elseif type(var) == "table" then
+            -- Tables
+            out = out .. tableToString(var, level)
+        elseif typeof(var) == "TweenInfo" then
+            -- TweenInfo
+            out =
+                out ..
+                "TweenInfo.new(" ..
+                    tostring(var.Time) ..
+                        ", Enum.EasingStyle." ..
+                            tostring(var.EasingStyle) ..
+                                ", Enum.EasingDirection." ..
+                                    tostring(var.EasingDirection) ..
+                                        ", " ..
+                                            tostring(var.RepeatCount) ..
+                                                ", " .. tostring(var.Reverses) .. ", " .. tostring(var.DelayTime) .. ")"
+        elseif typeof(var) == "Ray" then
+            -- Ray
+            out =
+                out ..
+                "Ray.new(Vector3.new(" .. tostring(var.Origin) .. "), Vector3.new(" .. tostring(var.Direction) .. "))"
+        elseif typeof(var) == "NumberSequence" then
+            -- NumberSequence
+            out = out .. "NumberSequence.new("
+            for i, v in pairs(var.KeyPoints) do
+                out = out .. tostring(v)
+                if i < #var.Keypoints then
+                    out = out .. ", "
+                end
+            end
+            out = out .. ")"
+        elseif typeof(var) == "DockWidgetPluginGuiInfo" then
+            -- DockWidgetPluginGuiInfo
+            out = out .. "DockWidgetPluginGuiInfo.new(Enum.InitialDockState" .. tostring(var) .. ")"
+        elseif typeof(var) == "ColorSequence" then
+            -- ColorSequence
+            out = out .. "ColorSequence.new("
+            for i, v in pairs(var.KeyPoints) do
+                out = out .. "Color3.new(" .. tostring(v) .. ")"
+                if i < #var.Keypoints then
+                    out = out .. ", "
+                end
+            end
+            out = out .. ")"
+        elseif typeof(var) == "BrickColor" then
+            -- BrickColor
+            out = out .. "BrickColor.new(" .. tostring(var.Number) .. ")"
+        elseif typeof(var) == "NumberRange" then
+            -- NumberRange
+            out = out .. "NumberRange.new(" .. tostring(var.Min) .. ", " .. tostring(var.Max) .. ")"
+        elseif typeof(var) == "Region3" then
+            -- Region3
+            local center = var.CFrame.Position
+            local size = var.CFrame.Size
+            local vector1 = center - size / 2
+            local vector2 = center + size / 2
+            out = out .. "Region3.new(Vector3.new(" .. tostring(vector1) .. "), Vector3.new(" .. tostring(vector2) .. ")"
+        elseif type(var) == "userdata" and typeof(var) ~= "Instance" then
+            -- Default userdata (no instances)
+            local dataName = typeof(var)
+            local args = tostring(var)
+            for i = 1, args:len() do
+                if args:sub(i, i) == "}" or args:sub(i, i) == "{" then
+                    if i > 1 and i < args:len() then
+                        args = args:sub(1, i - 1) .. " " .. args:sub(i + 1, args:len())
+                    elseif i == 1 then
+                        args = " " .. args:sub(i + 1, args:len())
+                    elseif i == args:len() then
+                        args = args:sub(1, i - 1) .. " "
+                    end
+                end
+            end
+            out = out .. dataName .. ".new(" .. args .. ")"
+        elseif type(var) == "userdata" and typeof(var) == "Instance" then
+            -- Instances
+            local parent = var
+            if parent == nil then
+                out = "nil"
+            elseif parent ~= game then
+                while true do
+                    if parent and parent.Parent == game then
+                        if game:GetService(parent.ClassName) then
+                            if parent.ClassName == "Workspace" then
+                                out = "workspace" .. out
+                            else
+                                out = 'game:GetService("' .. parent.ClassName .. '")' .. out
+                            end
+                            break
+                        else
+                            out = 'game["' .. getSpecials(parent.Name) .. '"]'
+                            break
+                        end
+                    elseif parent.Parent == nil then
+                        getNil = true
+                        out = 'getNil("' .. getSpecials(parent.Name) .. '", "' .. parent.ClassName .. '")'
+                        break
+                    else
+                        if parent.Name:match("%a+") ~= parent.Name then
+                            out = '["' .. getSpecials(parent.Name) .. '"]' .. out
+                        else
+                            out = "." .. parent.Name .. out
+                        end
+                    end
+                    parent = parent.Parent
+                end
+            else
+                out = "game"
+            end
+        -- legacy method
+        -- out = out .. "game." .. var:GetFullName() .. ","
+        end
+        return out
+    end
+
+    --- Converts a table to a string (includes nested tables)
+    function tableToString(t, level)
+        if type(level) ~= "number" then
+            level = 4
+        else
+            level = level + 4
+        end
+        local out = ""
+        for i, v in pairs(t) do
+            out = out .. "\n" .. space(level) .. "[" .. typeToString(i, level) .. "] = " .. typeToString(v, level) .. ","
+        end
+        out = "{" .. out .. "\n" .. space(level - 4) .. "}"
+        return out
+    end
+
+    --- Toggles on and off the Hookfunction remote spy method (DISABLED- will not run)
+    function toggleHook()
+        if toggle then
+            -- local function connect(remote)
+            --     spawn(
+            --         function()
+            --             if remote:IsA("RemoteEvent") then
+            --                 local old
+            --                 old =
+            --                     hookfunction(
+            --                     remote.FireServer,
+            --                     function(...)
+            --                         newEvent(remote.Name, genScript(remote, ...), remote, rawget(getfenv(2), "script"))
+            --                         return old(...)
+            --                     end
+            --                 )
+            --                 table.insert(connectedRemotes, {remote, old})
+            --             elseif remote:IsA("RemoteFunction") then
+            --                 local old
+            --                 old =
+            --                     hookfunction(
+            --                     remote.InvokeServer,
+            --                     function(...)
+            --                         newEvent(remote.Name, genScript(remote, ...), remote, rawget(getfenv(2), "script"))
+            --                         return old(...)
+            --                     end
+            --                 )
+            --                 table.insert(connectedRemotes, {remote, old})
+            --             end
+            --         end
+            --     )
+            -- end
+            -- game.ChildAdded:Connect(
+            --     function(c)
+            --         pcall(
+            --             function()
+            --                 if c:IsA("RemoteEvent") and c:IsA("RemoteFunction") then
+            --                     connect(c)
+            --                 end
+            --             end
+            --         )
+            --     end
+            -- )
+            -- spawn(
+            --     function()
+            --         for _, v in pairs(game:GetDescendants()) do
+            --             if toggle then
+            --                 pcall(
+            --                     function()
+            --                         if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
+            --                             connect(v)
+            --                         end
+            --                     end
+            --                 )
+            --                 wait()
+            --             end
+            --         end
+            --     end
+            -- )
+        else
+            -- for _, v in pairs(connectedRemotes) do
+            --     if v[1] and v[2] then
+            --         if v[1]:IsA("RemoteEvent") then
+            --             hookfunction(v[1].FireServer, v[2])
+            --         elseif v[1]:IsA("RemoteFunction") then
+            --             hookfunction(v[1].InvokeServer, v[2])
+            --         end
+            --     end
+            -- end
+            -- connectedRemotes = {}
+        end
+    end
+
+    --- Toggles on and off the namecall remote spy method
+    function toggleNamecall()
+        if not toggle then
+            gm.__namecall = function(...)
+                local args = {...}
+                local remote = args[1]
+                local methodName = getnamecallmethod()
+                if methodName == "FireServer" and not blacklisted(remote) then
+                    table.remove(args, 1)
+                    local script = rawget(getfenv(2), "script")
+                    local func = debug.getinfo(2).func
+                    spawn(
+                        function()
+                            local funNum
+                            for i, v in pairs(getgc()) do
+                                if v == func then
+                                    funNum = i
+                                    break
+                                end
+                            end
+                            remoteHandlerEvent:Fire("RemoteEvent", remote.Name, genScript(remote, unpack(args)), remote, script, blocked(remote), tableToString(debug.getupvalues(func)), tableToString(debug.getconstants(func)), funNum)
+                        end
+                    )
+                elseif methodName == "InvokeServer" and not blacklisted(remote) then
+                    table.remove(args, 1)
+                    local script = rawget(getfenv(2), "script")
+                    local func = debug.getinfo(2).func
+                    spawn(
+                        function()
+                            local funNum
+                            for i, v in pairs(getgc()) do
+                                if v == func then
+                                    funNum = i
+                                    break
+                                end
+                            end
+                            remoteHandlerEvent:Fire("RemoteFunction", remote.Name, genScript(remote, unpack(args)), remote, script, blocked(remote), tableToString(debug.getupvalues(func)), tableToString(debug.getconstants(func)), funNum)
+                        end
+                    )
+                end
+                if (methodName == "InvokeServer" or methodName == "FireServer") and blocked(remote) then
+                    return nil
+                else
+                    return original(...)
+                end
+            end
+        else
+            gm.__namecall = original
+        end
+    end
+
+    --- Toggles between the two remotespy methods (hookfunction currently = disabled)
+    function toggleSpyMethod()
+        toggleHook()
+        toggleNamecall()
+        toggle = not toggle
+    end
+
+    --- Handles the button creation things... Connected to `remoteHandlerEvent`
+    function bindableHandler(type, ...)
+        if type == "RemoteEvent" then
+            newEvent(...)
+        elseif type == "RemoteFunction" then
+            newFunction(...)
+        end
+    end
+
+    -- main
+    if not _G.SimpleSpyExecuted then
+        ContentProvider:PreloadAsync({icon, icon_2})
+        fTemplate.Parent = nil
+        eTemplate.Parent = nil
+        codebox.Text = ""
+        enablespy.MouseButton1Click:Connect(onToggleButtonClick)
+        remoteHandlerEvent.Event:Connect(bindableHandler)
+        onToggleButtonClick()
+        _G.SimpleSpyExecuted = true
     else
-        gm.__namecall = original
+        SentinelSpy:Destroy()
     end
-end
 
---- Toggles between the two remotespy methods (hookfunction currently = disabled)
-function toggleSpyMethod()
-    toggleHook()
-    toggleNamecall()
-    toggle = not toggle
-end
-
---- Handles the button creation things... Connected to `remoteHandlerEvent`
-function bindableHandler(type, ...)
-    if type == "RemoteEvent" then
-        newEvent(...)
-    elseif type == "RemoteFunction" then
-        newFunction(...)
+    clearBtn.MouseButton1Down:Connect(function()
+    logs = {}
+    for _, v in pairs(remotesScrollingFrame:GetChildren()) do
+        if not v:IsA("UIListLayout") then
+            v:Destroy()
+        end
     end
-end
-
--- main
-if not _G.SimpleSpyExecuted then
-    ContentProvider:PreloadAsync({icon, icon_2})
-    fTemplate.Parent = nil
-    eTemplate.Parent = nil
     codebox.Text = ""
-    enablespy.MouseButton1Click:Connect(onToggleButtonClick)
-    remoteHandlerEvent.Event:Connect(bindableHandler)
-    onToggleButtonClick()
-    _G.SimpleSpyExecuted = true
-else
-    SentinelSpy:Destroy()
-end
-
-clearBtn.MouseButton1Down:Connect(function()
-  logs = {}
-  for _, v in pairs(remotesScrollingFrame:GetChildren()) do
-      if not v:IsA("UIListLayout") then
-          v:Destroy()
-      end
-  end
-  codebox.Text = ""
-  selected = nil
-end)
-copyBtn.MouseButton1Down:Connect(function()
-    setclipboard(codebox.Text)
-end)
-copyRemBtn.MouseButton1Down:Connect(function()
-    setclipboard(typeToString(selected.Source))
-end)
-miniBtn.MouseButton1Down:Connect(function()
-  if vis == false then
-    vis = true
-    mainFrame:TweenSize(UDim2.new(0, 565,0, 31), "Out", "Linear", .2, true)
-  else
-    vis = false
-    mainFrame:TweenSize(UDim2.new(0, 565,0, 348), "Out", "Linear", .2, true)
-  end
-end)
-exitBtn.MouseButton1Down:Connect(function()
-    mainFrame:TweenSize(UDim2.new(0, 565,0, 31), "Out", "Linear", .2, true)
-  wait(.2)
-    mainFrame:TweenSize(UDim2.new(0, 1,0, 31), "Out", "Linear", .2, true)
-  wait(.2)
-    mainFrame.Visible = false;
-end)
-muteremoteBtn.MouseButton1Down:Connect(function()
-  table.insert(blacklist, #blacklist + 1, selected.Name)
-  muteremoteBtn.text.Text = 'Remote Muted!'
-  wait(.6)
-  muteremoteBtn.text.Text = 'Mute Remote'
-end)
-unmuteremoteBtn.MouseButton1Down:Connect(function()
-  unmuteremoteBtn.text.Text = "Unmuted Remotes!"
-  blacklist = {}
-  wait(.6)
-  unmuteremoteBtn.text.Text = 'Unmute Remotes'
-end)
-mainFrame.Active = true
-mainFrame.Draggable = true
-
-for _, child in pairs(SentinelSpy:GetDescendants()) do
-  if child:IsA("ImageButton") then
-    child.MouseEnter:Connect(function()
-      Tween(child, {ImageTransparency = 0}, "Linear", "Out", 0.3)
+    selected = nil
     end)
-    child.MouseLeave:Connect(function()
-      Tween(child, {ImageTransparency = 1}, "Linear", "Out", 0.3)
+    copyBtn.MouseButton1Down:Connect(function()
+        setclipboard(codebox.Text)
     end)
-  end
+    copyRemBtn.MouseButton1Down:Connect(function()
+        setclipboard(typeToString(selected.Source))
+    end)
+    miniBtn.MouseButton1Down:Connect(function()
+    if vis == false then
+        vis = true
+        mainFrame:TweenSize(UDim2.new(0, 565,0, 31), "Out", "Linear", .2, true)
+    else
+        vis = false
+        mainFrame:TweenSize(UDim2.new(0, 565,0, 348), "Out", "Linear", .2, true)
+    end
+    end)
+    exitBtn.MouseButton1Down:Connect(function()
+        mainFrame:TweenSize(UDim2.new(0, 565,0, 31), "Out", "Linear", .2, true)
+    wait(.2)
+        mainFrame:TweenSize(UDim2.new(0, 1,0, 31), "Out", "Linear", .2, true)
+    wait(.2)
+        mainFrame.Visible = false;
+    end)
+    muteremoteBtn.MouseButton1Down:Connect(function()
+    table.insert(blacklist, #blacklist + 1, selected.Name)
+    muteremoteBtn.text.Text = 'Remote Muted!'
+    wait(.6)
+    muteremoteBtn.text.Text = 'Mute Remote'
+    end)
+    unmuteremoteBtn.MouseButton1Down:Connect(function()
+    unmuteremoteBtn.text.Text = "Unmuted Remotes!"
+    blacklist = {}
+    wait(.6)
+    unmuteremoteBtn.text.Text = 'Unmute Remotes'
+    end)
+    mainFrame.Active = true
+    mainFrame.Draggable = true
+
+    for _, child in pairs(SentinelSpy:GetDescendants()) do
+    if child:IsA("ImageButton") then
+        child.MouseEnter:Connect(function()
+        Tween(child, {ImageTransparency = 0}, "Linear", "Out", 0.3)
+        end)
+        child.MouseLeave:Connect(function()
+        Tween(child, {ImageTransparency = 1}, "Linear", "Out", 0.3)
+        end)
+    end
+    end
 end
